@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+          />
+          <link rel="shortcut icon" href="favicon.png">
+    <title>Movie Box</title>
+</head>
+<body>
+    <header>
+        <ul class="normal-navbar">
+            <li class="logo"><a href="index.html"> <i class="fa-solid fa-house-user"></i> HOME-BOX</a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li>Categories
+            <ul class="categories">
+               
+            </ul>
+            </li>
+            <li>About us</li>
+            <li id="current-language"><i class="fa-solid fa-globe"></i>   
+                English
+                <ul>
+                    <li class="language">
+                        <img  class="lang-icon"src="/img/united-kingdom.png" alt="">
+                        English</li>
+                    <li class="language">
+                        <img  class="lang-icon"src="/img/vietnam.png" alt="">
+                        VietNamese</li>
+                    <li class="language">
+                        <img  class="lang-icon"src="/img/spain.png" alt="">
+                        Spanish</li>
+                </ul>
+            </li>
+        </ul>
+        <form  id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+
+        <!-- hamburger navbar -->
+        <div  class="hamburger-btn"><i class="fa-solid fa-bars"></i></div>
+        <section class="hamburger-navbar">
+            <div class="closenavbar">
+            <i class="fa-solid fa-xmark"></i> 
+            </div>  
+            <li class="logo-nav"><a href="index.html"> <i class="fa-solid fa-house-user"></i> HOME-BOX</a></li>
+            <li> <a href="index.html">Home</a></li>
+            <li>  <a href="javascript:void(0);"> Categories</a>
+                <ul class="categories-nav">
+               
+                    <li class="28"><div onclick="ChooseGenre(28)"> Action</div></li><li class="12"><div onclick="ChooseGenre(12)"> Adventure</div></li><li class="16"><div onclick="ChooseGenre(16)"> Animation</div></li><li class="35"><div onclick="ChooseGenre(35)"> Comedy</div></li><li class="80"><div onclick="ChooseGenre(80)"> Crime</div></li><li class="99"><div onclick="ChooseGenre(99)"> Documentary</div></li><li class="18"><div onclick="ChooseGenre(18)"> Drama</div></li><li class="10751"><div onclick="ChooseGenre(10751)"> Family</div></li><li class="14"><div onclick="ChooseGenre(14)"> Fantasy</div></li><li class="36"><div onclick="ChooseGenre(36)"> History</div></li><li class="27"><div onclick="ChooseGenre(27)"> Horror</div></li><li class="10402"><div onclick="ChooseGenre(10402)"> Music</div></li><li class="9648"><div onclick="ChooseGenre(9648)"> Mystery</div></li><li class="10749"><div onclick="ChooseGenre(10749)"> Romance</div></li><li class="878"><div onclick="ChooseGenre(878)"> Science Fiction</div></li><li class="10770"><div onclick="ChooseGenre(10770)"> TV Movie</div></li><li class="53"><div onclick="ChooseGenre(53)"> Thriller</div></li><li class="10752"><div onclick="ChooseGenre(10752)"> War</div></li><li class="37"><div onclick="ChooseGenre(37)"> Western</div></li></ul>
+            </li>
+            <ul class="categories">
+               
+            </ul>
+            </li>
+            <li>About us</li>
+            
+            <li id="current-language"><i class="fa-solid fa-globe"></i>   
+                <a href="javascript:void(0);"> English</a>
+                <ul class="lang-nav">
+                    <li class="language">
+                        <img  class="lang-icon"src="/img/united-kingdom.png" alt="">
+                        English</li>
+                    <li class="language">
+                        <img  class="lang-icon"src="/img/vietnam.png" alt="">
+                        VietNamese</li>
+                    <li class="language">
+                        <img  class="lang-icon"src="/img/spain.png" alt="">
+                        Spanish</li>
+                </ul>
+            </li>
+        </section>
+        
+    </header>
+    <div class="genre-container"></div>
+    <div class="slider-container">
+        <ul class="slider">
+            <li><img src="/poster/Spiderman.jpg" alt=""></li>
+            <li><img src="/poster/lego.jpg" alt=""></li>
+            <li><img src="/poster/attackontian.png" alt=""></li>
+            <li><img src="/poster/peaky.jpg" alt=""></li>
+            <li><img src="/poster/rio.jpg" alt=""></li>
+        </ul>
+        
+    </div>
+
+    <section class="popular-section">
+        <div class="title-and-btn">
+            <h4>What's Popular:</h4>
+            <div class="  show-more"><a href="page.html"> Show me More</a></div>
+        </div>
+    <main id="main">        
+    </main>
+</section>
+<section class="popular-section">
+    <div class="title-and-btn">
+        <h4>Trending</h4>
+        <div class="  show-more"><a href="page.html"> Show me More</a></div>
+    </div>
+<main id="main1">    
+</main>
+</section>
+<section class="popular-section">
+    <div class="title-and-btn">
+        <h4>What's Plaing at the Theater: </h4>
+        <div class="  show-more"><a href="page.html"> Show me More</a></div>
+    </div>
+<main id="main2">    
+</main>
+</section>
+
+
+    
+    <section class="footer">
+        <div class="about-us">About Us
+           <h5> This is a single small project done by DucbaoFe</h5>
+           <h5>Check out more on my social-media account:</h3>
+           <div class="social-media">
+            <a href="https://www.facebook.com/ducbao1803/"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ducbao_1803/"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/b%E1%BA%A3o-nguy%E1%BB%85n-%C4%91%E1%BB%A9c-06776922b/"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/NDBaoFE"> <i class="fa-brands fa-github"></i></a>
+           </div>
+        </div>
+        <div class="api">Legal
+            <h5>Terms of Use</h5>
+            <h5>API terms of use </h5>
+            <h5>Privacy policy</h5>
+        </div>
+    </section>
+    
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
